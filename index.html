@@ -1243,7 +1243,7 @@
           ? [{ label:'Close', className:'save-btn', onClick:closeModal }]
           : [
               { label:'Close', className:'ghost-btn', onClick:closeModal },
-              { label:'📤 Release Document', className:'save-btn', style:'background:#2e7d32;', onClick:() => { closeModal(); showReleaseForm(id); } }
+              { label:'Release Document', className:'save-btn', style:'background:#2e7d32;', onClick:() => { closeModal(); showReleaseForm(id); } }
             ];
 
       openModal('Document Request Details', `
@@ -1306,7 +1306,7 @@
 
       openModal('Release Document', body, [
         { label:'Cancel', className:'ghost-btn', onClick:closeModal },
-        { label:'✅ Confirm Release', className:'save-btn', style:'background:#2e7d32;', onClick: async () => {
+        { label:'Confirm Release', className:'save-btn', style:'background:#2e7d32;', onClick: async () => {
           const recipientName = document.getElementById('release-recipient-name').value.trim();
           const relationship  = document.getElementById('release-relationship').value;
           const proofFile     = document.getElementById('release-proof-file').files[0];
